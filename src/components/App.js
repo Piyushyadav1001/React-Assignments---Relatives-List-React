@@ -10,7 +10,7 @@ class App extends Component {
     ];
 
     return (
-      <ol>
+      <ol key>
         {relativeList.map((question, key) => {
           return <li key={question.key}>{question.description}</li>;
         })}
