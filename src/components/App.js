@@ -8,7 +8,7 @@ class App extends Component {
     ];
 
     return (
-      <ol key={Number.toString()}>
+      <ol key={relativeList}>
         {relativeList.map((question, key) => {
           return <li key={question.key}>{question.description}</li>;
         })}
