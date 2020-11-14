@@ -1,16 +1,14 @@
 import React, { Component, useState } from "react";
-import "../styles/App.css";
-
 class App extends Component {
   render() {
     const relativeList = [
-      { description: "React?", key: "relativeListItem1" },
-      { description: "JS?", key: "relativeListItem2" },
+      { description: "How are u React?", key: "relativeListItem1" },
+      { description: "hello", key: "relativeListItem2" },
       { description: "CSS?", key: "relativeListItem3" }
     ];
 
     return (
-      <ol key>
+      <ol key={Number.toString()}>
         {relativeList.map((question, key) => {
           return <li key={question.key}>{question.description}</li>;
         })}
